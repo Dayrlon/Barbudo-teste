@@ -1,65 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbudo BarberShop</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Barbudo BarberShop — Demo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Barbudo BarberShop</h1>
+      <p>Estilo, técnica e atendimento que respeita sua rotina.</p>
+      <div class="cta">
+        <a class="btn" href="#servicos">Nossos Serviços</a>
+        <a class="btn outline" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Agendar via WhatsApp</a>
+      </div>
+    </div>
+  </header>
 
-    <header class="hero">
-        <div class="overlay">
-            <h1>Barbudo BarberShop</h1>
-            <p>Estilo, tradição e atendimento premium</p>
-            <a href="#agendar" class="btn">Agendar Agora</a>
-        </div>
-    </header>
-
+  <main>
     <section class="sobre">
-        <h2>Sobre a Barbearia</h2>
-        <p>A Barbudo BarberShop combina autenticidade, personalidade e tradição. Um espaço feito para você relaxar, se cuidar e sair com visual impecável.</p>
+      <h2>Sobre a Barbearia</h2>
+      <p>A Barbudo BarberShop é um espaço pensado para quem valoriza estilo e praticidade. Profissionais treinados, ambiente confortável e serviços pensados para o seu cuidado semanal.</p>
     </section>
 
-    <section class="servicos" id="agendar">
-        <h2>Nossos Serviços</h2>
-        <div class="cards">
-
-            <div class="card">
-                <h3>Corte</h3>
-                <p>Do clássico ao moderno, sempre no estilo que combina com você.</p>
-                <a href="#" class="btn">Agendar Corte</a>
-            </div>
-
-            <div class="card">
-                <h3>Barba</h3>
-                <p>Barba alinhada com técnica e produtos profissionais.</p>
-                <a href="#" class="btn">Agendar Barba</a>
-            </div>
-
-            <div class="card">
-                <h3>Corte + Barba</h3>
-                <p>Pacote completo para transformar o visual.</p>
-                <a href="#" class="btn">Agendar Combo</a>
-            </div>
-
+    <section id="servicos" class="servicos">
+      <h2>Serviços</h2>
+      <div class="grid">
+        <div class="svc">
+          <h3>Corte</h3>
+          <p class="price">R$ 30,00</p>
+          <p class="time">00:30 min</p>
         </div>
-    </section>
 
-    <section class="galeria">
-        <h2>Ambiente</h2>
-        <p>Conheça o espaço da Barbudo BarberShop</p>
-
-        <div class="fotos">
-            <img src="https://i.imgur.com/3JrV9fN.jpeg" alt="Foto barbearia 1">
-            <img src="https://i.imgur.com/OJIFXEl.jpeg" alt="Foto barbearia 2">
-            <img src="https://i.imgur.com/CoSxC3G.jpeg" alt="Foto barbearia 3">
+        <div class="svc">
+          <h3>Barba</h3>
+          <p class="price">R$ 20,00</p>
+          <p class="time">00:20 min</p>
         </div>
+
+        <div class="svc">
+          <h3>Sobrancelha</h3>
+          <p class="price">R$ 10,00</p>
+          <p class="time">00:10 min</p>
+        </div>
+
+        <div class="svc">
+          <h3>Acabamento</h3>
+          <p class="price">R$ 10,00</p>
+          <p class="time">00:10 min</p>
+        </div>
+
+        <div class="svc">
+          <h3>Pintura (Preto)</h3>
+          <p class="price">R$ 18,00</p>
+          <p class="time">00:30 min</p>
+        </div>
+
+        <div class="svc">
+          <h3>Pigmentação</h3>
+          <p class="price">R$ 5,00</p>
+          <p class="time">00:15 min</p>
+        </div>
+
+        <div class="svc">
+          <h3>Platinado</h3>
+          <p class="price">R$ 90,00</p>
+          <p class="time">06:00 min</p>
+        </div>
+
+        <div class="svc">
+          <h3>Luzes / Reflexo</h3>
+          <p class="price">R$ 70,00</p>
+          <p class="time">01:00 min</p>
+        </div>
+
+        <div class="svc">
+          <h3>Progressiva (a partir de)</h3>
+          <p class="price">R$ 30,00</p>
+          <p class="time">00:15 min</p>
+        </div>
+
+        <div class="svc">
+          <h3>Limpeza de Pele</h3>
+          <p class="price">R$ 40,00</p>
+          <p class="time">00:30 min</p>
+        </div>
+
+        <div class="svc">
+          <h3>Depilação Orelha</h3>
+          <p class="price">R$ 30,00</p>
+          <p class="time">00:10 min</p>
+        </div>
+
+        <div class="svc">
+          <h3>Depilação Nariz</h3>
+          <p class="price">R$ 30,00</p>
+          <p class="time">00:05 min</p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2025 Barbudo BarberShop — Site desenvolvido como demonstração</p>
-    </footer>
+    <section id="planos" class="planos">
+      <h2>Assinaturas (Segunda a Quarta)</h2>
+      <div class="grid">
+        <div class="plan card">
+          <h3>Corte e Barba — Seg-Qua</h3>
+          <p class="desc">Inclui 1 corte + 1 barba por semana, válidos apenas de segunda a quarta.</p>
+          <p class="price big">R$ 74,90 / mês</p>
+          <a class="btn" href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20Plano%20Corte%20e%20Barba" target="_blank" rel="noopener">Assinar</a>
+        </div>
 
+        <div class="plan card">
+          <h3>Barba — Seg-Qua</h3>
+          <p class="desc">1 barba por semana, dias válidos: segunda a quarta.</p>
+          <p class="price big">R$ 52,90 / mês</p>
+          <a class="btn" href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20Plano%20Barba" target="_blank" rel="noopener">Assinar</a>
+        </div>
+
+        <div class="plan card">
+          <h3>Corte — Seg-Qua</h3>
+          <p class="desc">1 corte por semana, dias válidos: segunda a quarta.</p>
+          <p class="price big">R$ 52,90 / mês</p>
+          <a class="btn" href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20Plano%20Corte" target="_blank" rel="noopener">Assinar</a>
+        </div>
+      </div>
+      <p class="note">Observação: planos válidos apenas para agendamentos de Segunda, Terça ou Quarta.</p>
+    </section>
+
+    <section id="horarios" class="horarios">
+      <h2>Horário de Atendimento</h2>
+      <ul>
+        <li>Domingo: —</li>
+        <li>Segunda-feira: 09:00 - 20:00</li>
+        <li>Terça-feira: 09:00 - 21:00</li>
+        <li>Quarta-feira: 09:00 - 23:00</li>
+        <li>Quinta-feira: 09:00 - 23:00</li>
+        <li>Sexta-feira: 08:00 - 23:30</li>
+        <li>Sábado: 08:00 - 23:00</li>
+      </ul>
+    </section>
+
+    <section class="contato">
+      <h2>Contato</h2>
+      <p>Quer agendar agora? Clique no botão e mande mensagem no WhatsApp.</p>
+      <a class="btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp Barbudo</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>© 2025 Barbudo BarberShop — Demonstração</p>
+    </div>
+  </footer>
 </body>
 </html>
