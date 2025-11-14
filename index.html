@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
@@ -7,151 +7,254 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner">
+  <nav class="topnav">
+    <div class="brand">Barbudo BarberShop</div>
+    <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#quem-somos">Quem somos</a></li>
+      <li><a href="#planos">Assinaturas</a></li>
+      <li><a href="#agendamento">Agendamento</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-content">
       <h1>Barbudo BarberShop</h1>
-      <p>Estilo, técnica e atendimento que respeita sua rotina.</p>
-      <div class="cta">
-        <a class="btn" href="#servicos">Nossos Serviços</a>
+      <p class="lead">Estilo, técnica e atendimento que respeita sua rotina.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="#agendamento">Agendar</a>
+        <!-- atualize o número abaixo: 55 + DDD + número (sem espaços) -->
         <a class="btn outline" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Agendar via WhatsApp</a>
       </div>
+    </div>
+    <div class="hero-gallery">
+      <!-- Imagens principais (substitua pelos assets do Instagram) -->
+      <img src="https://i.imgur.com/OJIFXEl.jpeg" alt="Barbearia foto 1">
     </div>
   </header>
 
   <main>
-    <section class="sobre">
-      <h2>Sobre a Barbearia</h2>
-      <p>A Barbudo BarberShop é um espaço pensado para quem valoriza estilo e praticidade. Profissionais treinados, ambiente confortável e serviços pensados para o seu cuidado semanal.</p>
+    <section id="quem-somos" class="section about">
+      <div class="container">
+        <h2>Quem somos</h2>
+        <p>A Barbudo BarberShop é um espaço pensado para quem valoriza estilo e praticidade. Profissionais treinados, ambiente confortável e serviços pensados para o seu cuidado semanal.</p>
+      </div>
     </section>
 
-    <section id="servicos" class="servicos">
-      <h2>Serviços</h2>
-      <div class="grid">
-        <div class="svc">
-          <h3>Corte</h3>
-          <p class="price">R$ 30,00</p>
-          <p class="time">00:30 min</p>
-        </div>
+    <section id="servicos" class="section services">
+      <div class="container">
+        <h2>Serviços</h2>
+        <div class="grid">
+          <!-- Cada card corresponde ao serviço do site antigo -->
+          <article class="svc">
+            <h3>Corte</h3>
+            <p class="price">R$ 30,00</p>
+            <p class="time">00:30 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Barba</h3>
-          <p class="price">R$ 20,00</p>
-          <p class="time">00:20 min</p>
-        </div>
+          <article class="svc">
+            <h3>Barba</h3>
+            <p class="price">R$ 20,00</p>
+            <p class="time">00:20 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Sobrancelha</h3>
-          <p class="price">R$ 10,00</p>
-          <p class="time">00:10 min</p>
-        </div>
+          <article class="svc">
+            <h3>Sobrancelha</h3>
+            <p class="price">R$ 10,00</p>
+            <p class="time">00:10 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Acabamento</h3>
-          <p class="price">R$ 10,00</p>
-          <p class="time">00:10 min</p>
-        </div>
+          <article class="svc">
+            <h3>Acabamento</h3>
+            <p class="price">R$ 10,00</p>
+            <p class="time">00:10 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Pintura (Preto)</h3>
-          <p class="price">R$ 18,00</p>
-          <p class="time">00:30 min</p>
-        </div>
+          <article class="svc">
+            <h3>Pintura (Preto)</h3>
+            <p class="price">R$ 18,00</p>
+            <p class="time">00:30 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Pigmentação</h3>
-          <p class="price">R$ 5,00</p>
-          <p class="time">00:15 min</p>
-        </div>
+          <article class="svc">
+            <h3>Pigmentação</h3>
+            <p class="price">R$ 5,00</p>
+            <p class="time">00:15 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Platinado</h3>
-          <p class="price">R$ 90,00</p>
-          <p class="time">06:00 min</p>
-        </div>
+          <article class="svc">
+            <h3>Platinado</h3>
+            <p class="price">R$ 90,00</p>
+            <p class="time">06:00 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Luzes / Reflexo</h3>
-          <p class="price">R$ 70,00</p>
-          <p class="time">01:00 min</p>
-        </div>
+          <article class="svc">
+            <h3>Luzes / Reflexo</h3>
+            <p class="price">R$ 70,00</p>
+            <p class="time">01:00 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Progressiva (a partir de)</h3>
-          <p class="price">R$ 30,00</p>
-          <p class="time">00:15 min</p>
-        </div>
+          <article class="svc">
+            <h3>Progressiva (a partir de)</h3>
+            <p class="price">R$ 30,00</p>
+            <p class="time">00:15 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Limpeza de Pele</h3>
-          <p class="price">R$ 40,00</p>
-          <p class="time">00:30 min</p>
-        </div>
+          <article class="svc">
+            <h3>Limpeza de Pele</h3>
+            <p class="price">R$ 40,00</p>
+            <p class="time">00:30 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Depilação Orelha</h3>
-          <p class="price">R$ 30,00</p>
-          <p class="time">00:10 min</p>
-        </div>
+          <article class="svc">
+            <h3>Depilação Orelha</h3>
+            <p class="price">R$ 30,00</p>
+            <p class="time">00:10 min</p>
+          </article>
 
-        <div class="svc">
-          <h3>Depilação Nariz</h3>
-          <p class="price">R$ 30,00</p>
-          <p class="time">00:05 min</p>
+          <article class="svc">
+            <h3>Depilação Nariz</h3>
+            <p class="price">R$ 30,00</p>
+            <p class="time">00:05 min</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="planos" class="planos">
-      <h2>Assinaturas (Segunda a Quarta)</h2>
-      <div class="grid">
-        <div class="plan card">
-          <h3>Corte e Barba — Seg-Qua</h3>
-          <p class="desc">Inclui 1 corte + 1 barba por semana, válidos apenas de segunda a quarta.</p>
-          <p class="price big">R$ 74,90 / mês</p>
-          <a class="btn" href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20Plano%20Corte%20e%20Barba" target="_blank" rel="noopener">Assinar</a>
+    <section id="planos" class="section plans">
+      <div class="container">
+        <h2>Assinaturas (Segunda a Quarta)</h2>
+        <div class="grid plans-grid">
+          <div class="plan-card">
+            <h3>Corte e Barba — Seg-Qua</h3>
+            <p class="desc">Inclui 1 corte + 1 barba por semana — dias válidos: segunda, terça e quarta.</p>
+            <p class="price big">R$ 74,90 / mês</p>
+            <a class="btn primary" href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20Plano%20Corte%20e%20Barba" target="_blank" rel="noopener">Assinar</a>
+          </div>
+
+          <div class="plan-card">
+            <h3>Barba — Seg-Qua</h3>
+            <p class="desc">1 barba por semana — dias válidos: segunda a quarta.</p>
+            <p class="price big">R$ 52,90 / mês</p>
+            <a class="btn primary" href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20Plano%20Barba" target="_blank" rel="noopener">Assinar</a>
+          </div>
+
+          <div class="plan-card">
+            <h3>Corte — Seg-Qua</h3>
+            <p class="desc">1 corte por semana — dias válidos: segunda a quarta.</p>
+            <p class="price big">R$ 52,90 / mês</p>
+            <a class="btn primary" href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20Plano%20Corte" target="_blank" rel="noopener">Assinar</a>
+          </div>
+        </div>
+        <p class="note">Observação: planos válidos apenas para agendamentos de Segunda, Terça ou Quarta.</p>
+      </div>
+    </section>
+
+    <section id="agendamento" class="section booking">
+      <div class="container">
+        <h2>Agendamento</h2>
+        <p>Escolha entre: agendar pelo site (Calendly) ou via WhatsApp. Ambos sincronizam com o mesmo calendário.</p>
+
+        <!-- Option A: Embed Calendly (recomendado) -->
+        <div class="calendly-embed">
+          <!-- Caso queira usar Calendly: cole aqui seu link de evento no atributo data-url -->
+          <!-- Exemplo comentado: -->
+          <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/SUA-CONTA/servico" style="min-width:320px;height:640px;"></div> -->
+          <div class="booking-actions">
+            <a class="btn outline" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+            <a class="btn primary" href="#calendly" onclick="alert('Enviar Calendly embed ou link.');">Agendar pelo Site (Calendly)</a>
+          </div>
         </div>
 
-        <div class="plan card">
-          <h3>Barba — Seg-Qua</h3>
-          <p class="desc">1 barba por semana, dias válidos: segunda a quarta.</p>
-          <p class="price big">R$ 52,90 / mês</p>
-          <a class="btn" href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20Plano%20Barba" target="_blank" rel="noopener">Assinar</a>
-        </div>
-
-        <div class="plan card">
-          <h3>Corte — Seg-Qua</h3>
-          <p class="desc">1 corte por semana, dias válidos: segunda a quarta.</p>
-          <p class="price big">R$ 52,90 / mês</p>
-          <a class="btn" href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20Plano%20Corte" target="_blank" rel="noopener">Assinar</a>
+        <div class="info-sync">
+          <p><strong>Sugestão de sincronização:</strong> use <em>Calendly (ou Acuity)</em> + Google Calendar. Em seguida configure um Zap (Zapier/Make) para enviar notificações ao WhatsApp (ou usar número Business e template). Assim, reservas feitas pelo WhatsApp (via formulário Link → Calendly) e pelo Calendly aparecem no mesmo Google Calendar.</p>
         </div>
       </div>
-      <p class="note">Observação: planos válidos apenas para agendamentos de Segunda, Terça ou Quarta.</p>
     </section>
 
-    <section id="horarios" class="horarios">
-      <h2>Horário de Atendimento</h2>
-      <ul>
-        <li>Domingo: —</li>
-        <li>Segunda-feira: 09:00 - 20:00</li>
-        <li>Terça-feira: 09:00 - 21:00</li>
-        <li>Quarta-feira: 09:00 - 23:00</li>
-        <li>Quinta-feira: 09:00 - 23:00</li>
-        <li>Sexta-feira: 08:00 - 23:30</li>
-        <li>Sábado: 08:00 - 23:00</li>
-      </ul>
+    <section id="contato" class="section contact">
+      <div class="container">
+        <h2>Contato & Horários</h2>
+        <div class="contact-grid">
+          <div>
+            <h4>Horário de atendimento</h4>
+            <ul class="hours">
+              <li>Domingo: —</li>
+              <li>Segunda: 09:00 - 20:00</li>
+              <li>Terça: 09:00 - 21:00</li>
+              <li>Quarta: 09:00 - 23:00</li>
+              <li>Quinta: 09:00 - 23:00</li>
+              <li>Sexta: 08:00 - 23:30</li>
+              <li>Sábado: 08:00 - 23:00</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a class="wa" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Abrir conversa</a></p>
+
+            <h4>Endereço</h4>
+            <p>Endereço da barbearia (substituir)</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="contato">
-      <h2>Contato</h2>
-      <p>Quer agendar agora? Clique no botão e mande mensagem no WhatsApp.</p>
-      <a class="btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp Barbudo</a>
+    <section class="section gallery">
+      <div class="container">
+        <h2>Fotos recentes</h2>
+        <p>(Fotos selecionadas a partir de 06/08/2024 — substitua pelos arquivos reais do Instagram)</p>
+        <div class="gal-grid">
+          <!-- Substitua esses src pelos arquivos que você subir no repositório (assets/img1.jpg etc.) -->
+          <img src="https://i.imgur.com/3JrV9fN.jpeg" alt="Foto 1">
+          <img src="https://i.imgur.com/CoSxC3G.jpeg" alt="Foto 2">
+          <img src="https://i.imgur.com/U8Q1y7b.jpeg" alt="Foto 3">
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div>
-      <p>© 2025 Barbudo BarberShop — Demonstração</p>
+    <div class="container">
+      <p>© 2025 Barbudo BarberShop — Demo</p>
     </div>
   </footer>
+
+  <script>
+    // Menu toggle mobile
+    document.querySelector('.nav-toggle').addEventListener('click', ()=> {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+
+    // Close mobile menu on click
+    document.querySelectorAll('.nav-links a').forEach(link=>{
+      link.addEventListener('click', ()=> document.querySelector('.nav-links').classList.remove('open'));
+    });
+
+    // Simple fade-in on scroll
+    const faders = document.querySelectorAll('.section, .svc, .plan-card');
+    const appearOptions = { threshold: 0.05, rootMargin: '0px 0px -50px 0px' };
+    const appearOnScroll = new IntersectionObserver((entries, observer)=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(f => appearOnScroll.observe(f));
+  </script>
 </body>
 </html>
