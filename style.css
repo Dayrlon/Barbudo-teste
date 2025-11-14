@@ -73,4 +73,12 @@ h2{font-size:1.05rem;margin:0 0 14px;padding-left:10px;border-left:4px solid var
   .nav-links{position:fixed;top:64px;right:0;background:rgba(6,6,6,0.98);height:calc(100vh - 64px);width:260px;flex-direction:column;padding:18px;transform:translateX(110%);transition:transform .28s ease;gap:10px}
   .nav-links.open{transform:translateX(0)}
   .hero h1{font-size:1.6rem}
+  /* GALERIA */
+.galeria-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.galeria
+
 }
